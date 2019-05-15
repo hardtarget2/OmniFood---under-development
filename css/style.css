@@ -16,6 +16,15 @@ html{
   text-rendering: optimizeLegibility;
 }
 
+.clearfix {zoom: 1}
+.clearfix:after{
+  content: ".";
+  clear:both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+
+}
 /*----------------------------------------------------------------*/
 /* Reusable Componets */
 /*----------------------------------------------------------------*/
@@ -92,6 +101,40 @@ h2:after{
   color: #d35400;
   margin-bottom: 10px;
 }
+
+
+.small-icon{
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  color: #d35400;
+  font-size: 120%;
+  /* secert to align text and icons */
+  line-height: 120%
+  vertical-align:middle;
+  margin-top: -5px;
+  margin-right: 10px;
+}
+
+
+/*---------------LINKs---------------*/
+
+a:link,
+a:visited{
+  color: #d35400;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #d35400;
+  transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active{
+  color: #555555;
+  border-bottom: 1px solid transparent;
+}
+
+
 
 
 
@@ -243,5 +286,76 @@ border-bottom: 2px solid #d35400;
   opacity: 1;
   transform: scale(1.03);
 
+}
 
+/*----------------------------------------------------------------*/
+/* HOW IT WORKS */
+/*----------------------------------------------------------------*/
+
+.section-steps{
+  background-color: #e4e4e4;
+}
+
+
+.steps-box:first-child{
+  text-align: right;
+  padding-right: 3%;
+  margin-top: 30px;
+
+
+}
+
+.steps-box:last-child{
+  padding-left: 3%;
+  margin-top: 70px:
+
+}
+
+.app-screen{
+  width: 40%;
+
+}
+
+.works-step{
+  margin-bottom: 50px;
+}
+.works-step:last-of-type{
+  margin-bottom: 80px;
+}
+
+
+.works-step div{
+  color: #d35400;
+  border: 2px solid #d35400;
+  display: inline-block;
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  padding: 5px;
+  float:left;
+  font-size: 150%;
+  margin-right: 25px;
+
+}
+
+.btn-app img{
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
+
+}
+
+/*----------------------------------------------------------------*/
+/* CITIES */
+/*----------------------------------------------------------------*/
+
+.steps-box img{
+  width: 100%;
+  height: auto;
+  margin-bottom: 150px;
+}
+
+.city-feature{
+  margin-bottom: 5px;
 }
